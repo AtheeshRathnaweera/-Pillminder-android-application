@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profileformlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center"
+    android:theme="@style/AppTheme.NoActionBar">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/corbertregular"
+            android:text="WELCOME!"
+            android:textColor="@color/white"
+            android:textSize="45sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksandregular"
+            android:text="Please add your details to continue."
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/inputname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/roundededittext"
+            android:hint="Name"
+            android:inputType="textCapWords"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/lightgrey"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/inputage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/roundededittext"
+            android:hint="Age"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/lightgrey"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/inputblood"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/roundededittext"
+            android:hint="Blood Group"
+            android:inputType="textCapCharacters"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/lightgrey"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/inputweight"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/roundededittext"
+            android:hint="Weight in kg"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/lightgrey"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/inputheight"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/roundededittext"
+            android:hint="Height in cm"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/lightgrey"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/inputnotes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/roundededittext"
+            android:hint="Notes"
+            android:inputType="textCapSentences"
+            android:minHeight="40dp"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/lightgrey"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/addmediok"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/startroundbutton"
+            android:elevation="10dp"
+            android:shadowDx="5"
+            android:shadowDy="10"
+            android:text="Save"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

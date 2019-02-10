@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:id="@+id/atheesh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:theme="@style/AppTheme">
+
+    <RelativeLayout
+        android:id="@+id/today_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/home_top_text"
+            layout="@layout/home_text" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_top_text">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/HomeMedicineRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/profilefab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="192dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:elevation="13dp"
+        android:src="@drawable/pro"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:layout_anchor="@id/today_list"
+        app:layout_anchorGravity="bottom|right|end"
+        app:pressedTranslationZ="12dp" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/calendarfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="134dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="#008B8B"
+        android:elevation="13dp"
+        android:src="@drawable/calendayicon"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:layout_anchor="@id/today_list"
+        app:layout_anchorGravity="bottom|right|end"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/homefab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/addfab"
+        android:src="@drawable/ic_add_white_24dp"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:layout_anchor="@id/today_list"
+        app:layout_anchorGravity="bottom|right|end"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/homeopen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/expandFAB"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/expand"
+        app:borderWidth="0dp"
+        app:layout_anchor="@id/today_list"
+        app:layout_anchorGravity="bottom|right|end"
+        app:maxImageSize="@dimen/expandFABisze"
+        app:pressedTranslationZ="12dp" />
+
+</android.support.design.widget.CoordinatorLayout>
+

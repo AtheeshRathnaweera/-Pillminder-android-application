@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="5dp"
+                android:text="Notification time settings"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/lightgrey" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Morning "
+                    android:textColor="@color/grey"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/morningtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingStart="40dp"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+
+                <ImageButton
+                    android:id="@+id/morningtimeselect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingStart="15dp"
+                    android:src="@drawable/alarmicon" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Day "
+                    android:textColor="@color/grey"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/daytime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="40dp"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+
+                <ImageButton
+                    android:id="@+id/daytimeselect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingStart="15dp"
+                    android:src="@drawable/alarmicon" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+
+                    android:text="Night"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/nighttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingStart="40dp"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+
+                <ImageButton
+                    android:id="@+id/nighttimeselect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingStart="15dp"
+                    android:src="@drawable/alarmicon" />
+
+
+            </TableRow>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="15dp"
+                android:text="Alert type settings"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/lightgrey" />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Morning"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp" />
+
+
+                <Spinner
+                    android:id="@+id/morningSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    tools:absoluteX="8dp"
+                    tools:absoluteY="16dp" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Day"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp" />
+
+
+                <Spinner
+                    android:id="@+id/daySpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    tools:absoluteX="8dp"
+                    tools:absoluteY="16dp" />
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Night"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp" />
+
+
+                <Spinner
+                    android:id="@+id/nightSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    tools:absoluteX="8dp"
+                    tools:absoluteY="16dp" />
+
+
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="15dp"
+                android:text="Alert Tone and Ring settings"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/lightgrey" />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Notification tone : "
+                    android:textColor="@color/grey"
+                    android:textSize="19sp" />
+
+
+                <TextView
+                    android:id="@+id/notificationToneName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scrollbars="horizontal"
+                    android:text="Tone name"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Ringing tone : "
+                    android:textColor="@color/grey"
+
+                    android:textSize="19sp" />
+
+
+                <TextView
+                    android:id="@+id/ringingToneName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scrollbars="horizontal"
+                    android:text="Tone name"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+
+            </TableRow>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom|end"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp">
+
+            <Button
+                android:id="@+id/savesettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Save settings"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Cancel"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

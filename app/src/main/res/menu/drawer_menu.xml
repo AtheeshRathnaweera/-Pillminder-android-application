@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/view_all_med"
+            android:icon="@drawable/eye"
+            android:title="@string/viewallmedicine"
+            />
+
+        <item
+            android:id="@+id/know_medicines"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Know about medicines"
+        />
+
+    </group>
+
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/settings" />
+
+    </group>
+
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="@string/help" />
+
+    </group>
+
+
+</menu>

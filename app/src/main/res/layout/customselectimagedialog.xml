@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:minHeight="90dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:id="@+id/topBackground"
+        >
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="29sp"
+            android:text="Add profile picture!"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/desc"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_below="@id/topBackground"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+        <Button
+            android:id="@+id/gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="Choose from gallery"
+            android:textColor="@color/grey"
+            android:clickable="false"
+            android:focusable="false"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/takephoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="Take a photo"
+            android:textColor="@color/grey"
+            android:clickable="false"
+            android:focusable="false"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:minWidth="130dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundedbutton"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="normal"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

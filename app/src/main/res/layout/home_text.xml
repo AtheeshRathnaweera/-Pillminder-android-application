@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradientbackground"
+    android:gravity="end"
+    android:elevation="7dp"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dontknow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="day"
+            android:textColor="#FFFF"
+            android:textSize="60sp"
+            android:fontFamily="@font/corbertregular"/>
+
+        <TextView
+            android:id="@+id/date_and_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="day"
+            android:textColor="#FFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

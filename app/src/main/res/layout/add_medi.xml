@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addingMed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="top|center"
+        android:minHeight="200dp">
+
+        <TextView
+            android:id="@+id/comeon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:text="Please fill following details about your medication."
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="Name : "
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/medNameInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:inputType="textCapWords"
+                            android:text=" "
+                            android:textSize="20sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.5dip"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginStart="10sp"
+                        android:background="@color/lightgrey"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginEnd="10dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="Type : "
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <Spinner
+                            android:id="@+id/typespinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginTop="2dp"
+                            tools:absoluteX="8dp"
+                            tools:absoluteY="16dp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.5dip"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginStart="10sp"
+                        android:background="@color/lightgrey"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginEnd="10dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="Frequency :"
+                            android:textColor="@color/black"
+                            android:textSize="19sp" />
+
+                        <CheckBox
+                            android:id="@+id/morningselect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Morning"
+                            android:textSize="17dp" />
+
+                        <CheckBox
+                            android:id="@+id/dayselect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Day"
+                            android:textSize="17dp" />
+
+                        <CheckBox
+                            android:id="@+id/nightselect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Night"
+                            android:textSize="17dp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.5dip"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginStart="10sp"
+                        android:background="@color/lightgrey"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginEnd="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:gravity="start|center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="Dose : "
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/doseinput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:inputType="text"
+                            android:text=" "
+                            android:textSize="20sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.5dip"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginStart="10sp"
+                        android:background="@color/lightgrey"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginEnd="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="Time : "
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <RadioGroup
+                            android:id="@+id/timeRadioGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/beforem"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="Before Meal"
+                                android:textSize="17dp" />
+
+                            <RadioButton
+                                android:id="@+id/afterm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="After Meal"
+                                android:textSize="17dp" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.5dip"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginStart="10sp"
+                        android:background="@color/lightgrey"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginEnd="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="Duration (In days): "
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/durationinput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:inputType="number"
+                            android:text=""
+                            android:textSize="20sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.5dip"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginStart="10sp"
+                        android:background="@color/lightgrey"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginEnd="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="Starting Date : "
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/startdateinput"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Click icon"
+                            android:textSize="20sp" />
+
+                        <ImageButton
+                            android:id="@+id/dateselect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:src="@drawable/calendaricon" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.5dip"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginStart="10sp"
+                        android:background="@color/lightgrey"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginEnd="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="55dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="Description: "
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/descriptioninput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:inputType="textMultiLine"
+                            android:textSize="20sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/addmedicancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:text="Cancel"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <Button
+                            android:id="@+id/addmedisave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:text="@string/save"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

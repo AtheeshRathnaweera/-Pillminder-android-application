@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewAllMedicine"
+    android:id="@+id/relative">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:elevation="7dp">
+
+
+        <ImageButton
+            android:id="@+id/backicon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:background="?attr/selectableItemBackground"
+            android:layout_gravity="left|start"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All medicine list"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp" />
+
+
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/viewMedicineRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:paddingTop="10dp"/>
+
+</RelativeLayout>

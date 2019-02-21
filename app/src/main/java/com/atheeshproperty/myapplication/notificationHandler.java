@@ -109,7 +109,7 @@ public class notificationHandler extends ContextWrapper {
         }
 
         Intent intent = new Intent(this, MainActivity.class);
-        PendingIntent contentIntent = PendingIntent.getActivity(this, 0, intent, 0);
+        PendingIntent contentIntent = PendingIntent.getActivity(this, 0, intent, 0);//Intent to open the app when notifaction click
         NotificationCompat.InboxStyle inboxStyle = new NotificationCompat.InboxStyle();
         inboxStyle.setBigContentTitle(TitleWithTime + " PRESCRIPTION ");
 
@@ -131,7 +131,7 @@ public class notificationHandler extends ContextWrapper {
 
         //action for click the "Mark all as taken" in notification
         Intent jim = new Intent(this, updateOnPushButtonClick.class);
-        jim.putExtra("Received", mIDS);
+        jim.putExtra(" Received", mIDS);
         PendingIntent parseintent = PendingIntent.getService(this, 0, jim, PendingIntent.FLAG_CANCEL_CURRENT);
         Log.d("alarm ", "Size of the mStrings : " + mIDS.length);
 
